@@ -308,7 +308,7 @@ async def on_message(message):
         await message.channel.send("* Thanks for using NOOBPOOK Bot🤖 \nHere are the commands you can use with this bot. \n1. #*wiki ex.Minecraft: Gives you information about the desired topic you want.\n\n2. #*private: Connects with you in private chat.\n\n3. #*time: Gives you the current time.\n\n4. #*version: Gives you the version of the bot.\n\n5. #*countl ...: Gives you the exact number of letters in your paragraph.\n\n6. #*countw ...: Gives you the exact number of words in your paragraph.\n\n7. #*countcus...: Gives you the exact number of words you mention in your paragraph.\n\n8. #*cal a 57 75: Add both the numbers and gives you the required answer. \n\n9.#*cal s 90 75: Subtarct the numbers and gives you the required answer.\n\n10. #*cal m 57 75: Multiply both the numbers and gives you the required product.\n\n11. #*cal d 999999 11: Divide the numbers and gives you the required answer.\n\n12. #*cal exp 10 3: Can perform exponentation and gives you the required answer.\n\n13. #*cal root 1000 3: Can perform under root operations and gives you the required answer.\n\n14. #*cal log 3 1000: Perform log operations and gives you the required answer.")
     
     #manager for the music-commands section:
-    elif str(message.channel) == client.get_channel(939541391569211483):
+    elif message.channel == client.get_channel(939541391569211483):
         if ";" not in message.content or message.author != "FredBoat♪♪#7284":
             await message.channel.purge(limit=1)
             botEmbed = discord.Embed(title ="Intelligent Bot", description="That message is not allowed here!", color=0xffff00)
