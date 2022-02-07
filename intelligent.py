@@ -308,7 +308,8 @@ async def on_message(message):
     
     #manager for the music-commands section:
     elif message.channel == client.get_channel(939541391569211483):
-        if ";" not in message.content and message.author != "FredBoat♪♪#7284":
+        message_author = await client.fetch_user(184405311681986560)
+        if ";;" not in message.content and message.author != message_author:
             await message.channel.purge(limit=1)
             botEmbed = discord.Embed(title ="Intelligent Bot", description="That message is not allowed here!", color=0xffff00)
             botEmbed.add_field(name=str(message.author),value="❌", inline=False)
@@ -318,8 +319,16 @@ async def on_message(message):
     
     #manager for the meeting and general channel.
     elif message.channel==client.get_channel(936524570888925190) and message.channel==client.get_channel(936524570888925189):
-        if ";" in message.content:
+        if ";;" in message.content:
             message_channel=client.get_channel(939541391569211483)
+            await message.channel.purge(limit=1)
+            musicEmbed = discord.Embed(title ="Intelligent Bot", description="That message is not allowed here!", color=0xffff00)
+            musicEmbed.add_field(name=str(message.author),value="❌", inline=False)
+            musicEmbed.add_field(name="What to do then?", value="To use commands ,head onto the the "+str(message_channel), inline=False)
+            musicEmbed.set_footer(text="Study!, Play!, Sleep!")     
+            await message.author.send(embed=musicEmbed)
+        elif "/" in message.content:
+            message_channel=client.get_channel(939414218149605396)
             await message.channel.purge(limit=1)
             musicEmbed = discord.Embed(title ="Intelligent Bot", description="That message is not allowed here!", color=0xffff00)
             musicEmbed.add_field(name=str(message.author),value="❌", inline=False)
@@ -330,7 +339,8 @@ async def on_message(message):
     
     #manager for the botcommand channel.
     elif message.channel == client.get_channel(939414218149605396):
-        if "/" not in message.content or message.author != "MEE6#4876" :
+        message_author = await client.fetch_user(159985870458322944)
+        if "/" not in message.content or message.author != message_author :
             await message.channel.purge(limit=1)
             message_channel = client.get_channel(936524570888925189)
             musicEmbed = discord.Embed(title ="Intelligent Bot", description="That message is not allowed here!", color=0xffff00)
