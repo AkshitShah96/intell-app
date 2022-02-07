@@ -372,7 +372,7 @@ async def on_message(message):
         await message.content.add_reaction("🎮")
         pass
     
-    #sakshi.
+    #sakshi. 
     elif message.author == await client.fetch_user(867627859383287808):
         await message.add_reaction("👩‍🎓")
         pass
