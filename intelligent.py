@@ -351,24 +351,30 @@ async def on_message(message):
             pass
             pass 
     
-    elif "hello" in message.content:
-        await message.add_reaction("😃")
+    #akshit shah.
+    elif message.author == await client.fetch_user(737914201506447431):
+        await message.content.add_reaction("🥛")
+        await message.content.add_reaction("👱‍♂️")
         pass
     
-    elif str(message.author) == "NOOB#9812":
-        await message.add_reaction("👽")
-        pass
-
-    elif str(message.channel) == "youtube":
-        await message.add_reaction("👍")
-        pass
-
-    elif str(message.author) == "BeastBoyKrish#5783":
-        await message.add_reaction("💀")
+    #vedant shetye
+    elif message.author == await client.fetch_user(763676643356835840):
+        await message.content.add_reaction("👽")
         pass
     
-    elif str(message.author) == "Minecraftsmp#2089":
-        await message.add_reaction("😮")
+    #krish.
+    elif message.author == await client.fetch_user(896404472014717028):
+        await message.content.add_reaction("👨‍💻")
+        pass
+    
+    #rishi.
+    elif message.author == await client.fetch_user(756797479806304338):
+        await message.content.add_reaction("🎮")
+        pass
+    
+    #sakshi.
+    elif message.author == await client.fetch_user(867627859383287808):
+        await message.add_reaction("👩‍🎓")
         pass
 
 client.run("OTQwMTk5NzkzNTEzMzM2ODMy.YgD7Sg.IXCU3ieABBJk3kSVE0jXpG55ex0")
