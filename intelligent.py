@@ -14,8 +14,7 @@ client = discord.Client()
 
 @client.event
 async def on_ready():
-    general_channel = client.get_channel(936524570888925189)
-    await general_channel.send("* Bot just landed on the server!")
+    print("* Bot just landed on the server!")
 
 @client.event
 async def on_error(error):
@@ -313,7 +312,7 @@ async def on_message(message):
             await message.channel.purge(limit=1)
             botEmbed = discord.Embed(title ="Intelligent Bot", description="That message is not allowed here!", color=0xffff00)
             botEmbed.add_field(name=str(message.author),value="❌", inline=False)
-            botEmbed.add_field(name="Only FredBoat commands are allowed in this channel!")
+            botEmbed.add_field(name="Only FredBoat commands are allowed in this channel!", value="✔️")
             await message.author.send(embed=botEmbed)
             pass                   
     
