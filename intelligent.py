@@ -308,7 +308,7 @@ async def on_message(message):
     
     #manager for the music-commands section:
     elif message.channel == client.get_channel(939541391569211483):
-        if ";" not in message.content or message.author != "FredBoat♪♪#7284":
+        if ";" not in message.content and message.author != "FredBoat♪♪#7284":
             await message.channel.purge(limit=1)
             botEmbed = discord.Embed(title ="Intelligent Bot", description="That message is not allowed here!", color=0xffff00)
             botEmbed.add_field(name=str(message.author),value="❌", inline=False)
