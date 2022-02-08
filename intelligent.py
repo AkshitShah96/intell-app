@@ -50,8 +50,8 @@ async def on_message(message):
     elif message.content == "#roles":
         button = Button(label="AMUL", style=discord.ButtonStyle.green, emoji="🍼")
         button2 = Button(label="Rishi The Piro", style=discord.ButtonStyle.danger, emoji="🕹")
-        button3 = Button(label="The DJ GUY", style=discord.ButtonStyle.grey, emoji="🎧")
-        button4 = Button(label="Server Owner", style=discord.ButtonStyle.grey)
+        button3 = Button(label="The DJ GUY", style=discord.ButtonStyle.grey, emoji="🎧")  
+        button4 = Button(label="Server Owner", style=discord.ButtonStyle.grey, emoji="👑")
         view = View()
         view.add_item(button)
         view.add_item(button2)
