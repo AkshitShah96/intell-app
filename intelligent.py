@@ -59,22 +59,22 @@ async def on_message(message):
         view.add_item(button4)
         async def button_callback(interaction):
             author = interaction.user
-            role = get(author.guild.roles, name='Akshit Amul')
+            role = get(author.guild.roles, name="Akshit Amul")
             await interaction.user.add_roles(role)
         button.callback = button_callback 
         async def button_callback(interaction):
             author = interaction.user
-            role = get(author.guild.roles, name='JENUBHAI')
+            role = get(author.guild.roles, name="JENUBHAI")
             await interaction.user.add_roles(role)
         button2.callback = button_callback 
         async def button_callback(interaction):
             author = interaction.user
-            role = get(author.guild.roles, name='THE DJ GUY')
+            role = get(author.guild.roles, name="THE DJ GUY")
             await interaction.user.add_roles(role)
         button3.callback = button_callback 
         async def button_callback(interaction):
             author = interaction.user
-            role = get(author.guild.roles, name='SERVER OWNER')
+            role = get(author.guild.roles, name="SERVER OWNER")
             await interaction.user.add_roles(role)
         button4.callback = button_callback 
         await message.channel.send("hi", view=view) 
