@@ -59,22 +59,22 @@ async def on_message(message):
         view.add_item(button4)
         async def button_callback(interaction):
             author = interaction.user
-            role = get(author.guild.roles, name='Noobpook')
+            role = get(author.guild.roles, name='Akshit Amul')
             await interaction.user.add_roles(role)
         button.callback = button_callback 
         async def button_callback(interaction):
             author = interaction.user
-            role = get(author.guild.roles, name='UkiNoobda')
+            role = get(author.guild.roles, name='JENUBHAI')
             await interaction.user.add_roles(role)
         button2.callback = button_callback 
         async def button_callback(interaction):
             author = interaction.user
-            role = get(author.guild.roles, name='The Dj wala Babu')
+            role = get(author.guild.roles, name='THE DJ GUY')
             await interaction.user.add_roles(role)
         button3.callback = button_callback 
         async def button_callback(interaction):
             author = interaction.user
-            role = get(author.guild.roles, name='the yoyo guy')
+            role = get(author.guild.roles, name='SERVER OWNER')
             await interaction.user.add_roles(role)
         button4.callback = button_callback 
         await message.channel.send("hi", view=view)
@@ -205,7 +205,7 @@ async def on_message(message):
     #Funny Easter egg for my friend.
     elif message.content == "akshit is milkman, right?":         
         await message.channel.send("That's true!")
-        await message.content.add_reaction("🌚")
+        await message.add_reaction("🌚")
     
     #Gives you the exact count of letters in your paragraph.
     elif "#countl" in message.content:
@@ -318,7 +318,7 @@ async def on_message(message):
             pass                   
     
     #manager for the meeting and general channel.
-    elif message.channel==client.get_channel(936524570888925190) and message.channel==client.get_channel(936524570888925189):
+    elif message.channel==client.get_channel(936524570888925190) or message.channel==client.get_channel(936524570888925189):
         if ";;" in message.content:
             message_channel=client.get_channel(939541391569211483)
             await message.channel.purge(limit=1)
@@ -353,23 +353,23 @@ async def on_message(message):
     
     #akshit shah.
     elif message.author == await client.fetch_user(737914201506447431):
-        await message.content.add_reaction("🥛")
-        await message.content.add_reaction("👱‍♂️")
+        await message.add_reaction("🥛")
+        await message.add_reaction("👱‍♂️")
         pass
     
     #vedant shetye
     elif message.author == await client.fetch_user(763676643356835840):
-        await message.content.add_reaction("👽")
+        await message.add_reaction("👽")
         pass
     
     #krish.
     elif message.author == await client.fetch_user(896404472014717028):
-        await message.content.add_reaction("👨‍💻")
+        await message.add_reaction("👨‍💻")
         pass
     
     #rishi.
     elif message.author == await client.fetch_user(756797479806304338):
-        await message.content.add_reaction("🎮")
+        await message.add_reaction("🎮")
         pass
     
     #sakshi. 
