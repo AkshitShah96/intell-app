@@ -77,7 +77,7 @@ async def on_message(message):
             role = get(author.guild.roles, name='SERVER OWNER')
             await interaction.user.add_roles(role)
         button4.callback = button_callback 
-        await message.channel.send("hi", view=view)
+        await message.channel.send("hi", view=view) 
     
     #A user can make custom buutons with the help of this command.
     elif "!makebut" in message.content:
