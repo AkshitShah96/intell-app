@@ -377,4 +377,4 @@ async def on_message(message):
             pass
             pass 
 
-client.run("OTQwMTk5NzkzNTEzMzM2ODMy.YgD7Sg.IXCU3ieABBJk3kSVE0jXpG55ex0")
+client.run("")
