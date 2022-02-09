@@ -61,6 +61,10 @@ async def on_message(message):
             author = interaction.user
             role = get(author.guild.roles, name="Akshit Amul")
             await interaction.user.add_roles(role)
+            Rembed = discord.Embed(title = "INTELLIJE", description="Welcome to Virtuality!", color=0xffff00)
+            Rembed.add_field(name=author, value="You have got the role of " + role ,inline=False)
+            Rembed.set_author(name=await client.fetch_user(940199793513336832))
+            await interaction.response.send(embed=Rembed)
         button.callback = button_callback 
         async def button_callback(interaction):
             author = interaction.user
